@@ -1,0 +1,59 @@
+package recursion;
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+class SearchTest {
+
+	@Test
+	public void linearSearchTest() {
+		int arr[] = {1,3,5,6,7,4,8};
+		int size = arr.length;
+		int key = 7;
+		assertEquals(4, Search.linearSearch(arr, key, size));
+	}
+	
+	@Test
+	public void linearSearchTest1() {
+		int arr[] = {1,3,5,6,7,4,8};
+		int size = arr.length;
+		int key = 8;
+		assertEquals(size-1, Search.linearSearch(arr, key, size));
+	}
+	
+	@Test
+	public void linearSearchTest2() {
+		int arr[] = {1,3,5,6,7,4,8};
+		int size = arr.length;
+		int key = 10;
+		assertEquals(-1, Search.linearSearch(arr, key, size));
+	}
+	
+	@Test
+	public void binarySearchTest() {
+		int arr[] = {1,2,3,4,5,6,7,8};
+		int size = arr.length;
+		int key = 7;
+		assertEquals(6, Search.linearSearch(arr, key, size));
+	}
+	
+	@Test
+	public void binarySearchTes1() {
+		int arr[] = {1,2,3,4,5,6,7,8};
+		int size = arr.length;
+		int key = 8;
+		assertEquals(size-1, Search.linearSearch(arr, key, size));
+	}
+	
+	@Test
+	public void binarySearchTes2() {
+		int arr[] = {1,2,3,4,5,6,7,8};
+		int size = arr.length;
+		int key = 10;
+		assertEquals(-1, Search.linearSearch(arr, key, size));
+	}
+
+
+
+
+}
