@@ -45,7 +45,7 @@ public class NQueen {
 	 * @param col checking queens in columns vice
 	 * @param size Size of the input array
 	 * @return if all the positions of the queens are found then true else false
-	 * @throws @throws AssertionError if size is less than zero
+	 * @throws AssertionError if size is less than zero
 	 */
 
 	public static boolean nQueen(int board[][], int col, int size) {
